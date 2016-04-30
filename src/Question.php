@@ -13,6 +13,11 @@ class Question
         $this->choices = $choices;
     }
 
+    public function getPort()
+    {
+        return $this->port;
+    }
+
     public function getChoices()
     {
         return $this->choices;

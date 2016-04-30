@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+{% for questionIndex, question in game.questions %}
+<div>Question: {{ question.port }}</div>
+<div>
+  {% for choice in question.choices %}
+    <a href="{{ path('answer', {
+      'id': gameId,
+      'question': questionIndex,
+      'answer': choice.text
+    }) }}">{{ choice.text }}</a>
+  {% endfor %}
+  <br>
+  <br>
+</div>
+{% endfor %}
+
+{% endblock %}
