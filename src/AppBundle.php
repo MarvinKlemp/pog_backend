@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Pog;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
